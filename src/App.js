@@ -5,7 +5,8 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Dashboard from './components/dashboard/Dashboard';
 import ProjectDetails from './components/projects/ProjectDetails';
-import Signin from './components/auth/SignIn';
+import SignIn from './components/auth/SignIn';
+import SignUp from './components/auth/SignUp';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <Switch>
           <Route exact path='/' component ={Dashboard} />
           <Route path='/projects/:id' component = {ProjectDetails} />
-          <Route exact path='/signin' component={Signin} />
+          <Route exact path='/signin' component={SignIn} />
+          <Route exact path='/signup' component={SignUp} />
         </Switch>
       </div>
     </BrowserRouter>
