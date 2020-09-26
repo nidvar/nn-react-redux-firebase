@@ -33,3 +33,21 @@
 h1, h2{
   text-align:center;
 }
+
+.Sign_in{
+  text-align: center;
+}
+
+.Sign_in input{
+  margin:5px 0 5px 0;
+}
+
+.Create_Project{
+  width:300px;
+  margin:auto;
+}
+.Create_Project textarea{
+  min-width:300px;
+  min-height:150px;
+  margin:5px 0 5px 0;
+}

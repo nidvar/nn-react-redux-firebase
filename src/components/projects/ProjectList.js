@@ -1,31 +1,16 @@
 import React from 'react';
+import ProjectSummary from './ProjectSummary'
 
 const ProjectList = ()=>{
     return(
         <div>
-            <div className='Individual_project_box'>
-                <p>Title: Pikachu</p>
-                <p>Posted by: Trump</p>
-                <p>Date: 2020</p>
-            </div>
+            <ProjectSummary />
 
-            <div className='Individual_project_box'>
-                <p>Title: Pikachu</p>
-                <p>Posted by: Trump</p>
-                <p>Date: 2020</p>
-            </div>
+            <ProjectSummary />
 
-            <div className='Individual_project_box'>
-                <p>Title: Pikachu</p>
-                <p>Posted by: Trump</p>
-                <p>Date: 2020</p>
-            </div>
+            <ProjectSummary />
 
-            <div className='Individual_project_box'>
-                <p>Title: Pikachu</p>
-                <p>Posted by: Trump</p>
-                <p>Date: 2020</p>
-            </div>
+            <ProjectSummary />
         </div>
     )
 }

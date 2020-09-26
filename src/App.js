@@ -3,7 +3,11 @@ import './App.css';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 import Navbar from './components/layout/Navbar';
-import Dashboard from './components/dashboard/Dashboard'
+import Dashboard from './components/dashboard/Dashboard';
+import ProjectDetails from './components/projects/ProjectDetails';
+import SignIn from './components/auth/SignIn';
+import SignUp from './components/auth/SignUp';
+import CreateProjects from './components/projects/CreateProjects';
 
 function App() {
   return (
@@ -12,7 +16,11 @@ function App() {
         <Navbar />
         <h1>NN React Redux Firebase</h1>
         <Switch>
-          <Route path='/' component ={Dashboard} />
+          <Route exact path='/' component ={Dashboard} />
+          <Route path='/projects/:id' component = {ProjectDetails} />
+          <Route exact path='/signin' component={SignIn} />
+          <Route exact path='/signup' component={SignUp} />
+          <Route exact path='/createproject' component={CreateProjects} />
         </Switch>
       </div>
     </BrowserRouter>
