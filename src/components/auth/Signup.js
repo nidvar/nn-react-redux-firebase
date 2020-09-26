@@ -21,7 +21,7 @@ class SignUp extends React.Component{
     render(){
         return(
             <div>
-                <h1>Sign In</h1>
+                <h1>Sign Up For a New Account</h1>
                 <form className='Sign_in' onSubmit={this.handleSubmit}>
                     <input type='email' id='email' placeholder='email' onChange={this.handleChange} /><br />
                     <input type='password' id='password'  placeholder='password' onChange={this.handleChange} /><br />
