@@ -7,6 +7,11 @@ const initial_state = {
 }
 
 const projectReducer = (state = initial_state, action)=>{
+    if(action.type ==='CREATE_PROJECT'){
+        state = action.payload
+        console.log(state)
+        return state
+    }
     return state
 }
 

@@ -5,7 +5,7 @@ const ProjectList = (props)=>{
     console.log(props.projects)
     return(
         <div>
-            {props.projects.map(a=>{
+            {props.projects && props.projects.map(a=>{
                 return <ProjectSummary title={a.title} content={a.content}/>
             })}
         </div>

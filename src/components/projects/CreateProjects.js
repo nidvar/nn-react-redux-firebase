@@ -1,4 +1,8 @@
 import React from 'react';
+import {connect} from 'react-redux';
+
+import createProject from '../../store/actions/projectActions';
+
 
 class CreateProject extends React.Component{
     state={
@@ -7,15 +11,14 @@ class CreateProject extends React.Component{
     }
     handleSubmit=(e)=>{
         e.preventDefault();
-        console.log(this.state)
+        this.props.createProject(this.state)
     }
-
     handleChange=(e)=>{
         this.setState({
             [e.target.id]: e.target.value,
         })
     }
-
+    
     render(){
         return(
             <div>
@@ -30,4 +33,4 @@ class CreateProject extends React.Component{
     }
 }
 
-export default CreateProject
+export default connect(null, {  createProject:createProject  } )(CreateProject)
