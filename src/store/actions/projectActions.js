@@ -1,5 +1,5 @@
 const createProject = (project)=>{
-    return (dispatching_stuff, grabbing_state)=>{
+    return (dispatching_stuff, grabbing_state,{getFirebase, getFirestore})=>{
 
 
         dispatching_stuff({
