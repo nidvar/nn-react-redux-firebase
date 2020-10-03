@@ -11,13 +11,13 @@ class Dashboard extends React.Component{
         super(props)
     }
     render(){
-        console.log(this.props)
+        console.log(this.props.firestore_reducer.ordered.projects)
         return(
             <div className='Dashboard_outer'>
                 <h2>Dashboard</h2>
                 <div className='Dashboard_inner'>
                 <div>
-                    <ProjectList projects = {this.props.project.projects}/>
+                    <ProjectList projects = {this.props.firestore_reducer.ordered.projects}/>
                 </div>
 
                 <div>
@@ -30,7 +30,6 @@ class Dashboard extends React.Component{
 }
 
 const mapStateToProps = (state)=>{
-    console.log(state)
     return state
 }
 
