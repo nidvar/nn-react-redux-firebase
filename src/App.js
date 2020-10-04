@@ -14,10 +14,10 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navbar />
-        <h1>NN React Redux Firebase</h1>
+        
         <Switch>
           <Route exact path='/' component ={Dashboard} />
-          <Route path='/projects/:id' component = {ProjectDetails} />
+          <Route path='/project/:id' component = {ProjectDetails} />
           <Route exact path='/signin' component={SignIn} />
           <Route exact path='/signup' component={SignUp} />
           <Route exact path='/createproject' component={CreateProjects} />

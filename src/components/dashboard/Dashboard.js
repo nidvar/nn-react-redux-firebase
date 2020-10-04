@@ -14,6 +14,7 @@ class Dashboard extends React.Component{
         console.log(this.props.firestore_reducer.ordered.projects)
         return(
             <div className='Dashboard_outer'>
+                <h1>NN React Redux Firebase</h1>
                 <h2>Dashboard</h2>
                 <div className='Dashboard_inner'>
                 <div>
